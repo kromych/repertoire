@@ -6,7 +6,8 @@
 \header {
   composer = "Frèdèric Chopin (1810-1849)"
   title =  \markup { "Prelude in" \italic {"E"} "minor" }
-  subtitle = "Op. 28, no. 4"
+  subtitle = "Op. 28, № 4"
+  subsubtitle = \markup {\italic {"à son ami J.C.Kessler"}}
   tagline = "Piano teacher: Nastya, engraved: Roman"
 }
 
@@ -15,7 +16,7 @@ global = {
   \tempo "Largo" 4 = 40
   \set Score.currentBarNumber = #1  
   \easyHeadsOn
-  \numericTimeSignature
+%  \numericTimeSignature
   \time 2/2
 }
 
@@ -33,7 +34,7 @@ righthand = {
   \pageBreak
   
   % m13
-  b'2. c''4 | b'2. c''4 | b'2. c''4 | b'8. ais'16 ais'4 gisis''4\turn fis''8. e''16 | 
+  b'2. c''4 | b'2. c''4 | b'2. c''4 | b'8. ais'16 ais'?8 b'32 ais'?32 gisis'32 ais'?32 g''!4 fis''8. e''16 | 
   % m17
   e''8 dis''8 c'''8 dis''8 dis''8 e''8 g''8 b'8 | d''8 c''8 \tuplet 3/2 {e''8 e'8 a'8} fis'4. a'8 |
   fis'2. \acciaccatura b'8 a'4 | fis'2. ~ fis'8. e'16 | 
@@ -45,7 +46,7 @@ righthand = {
   <e fis b e'>2  <dis fis b dis'>2 | 
   
   % m25
-  <e g b e'>1 \bar "|."
+  <e g b e'>1\fermata \bar "|."
 }
 
 lefthand = {
@@ -84,7 +85,7 @@ lefthand = {
   <ais, c g>2 r2\fermata |
   <b,, b,>2 <b,, fis, b,>2 | 
   % m25
-  <e,, e,>1 \bar "|."
+  <e,, e,>1\fermata \bar "|."
 }
 
 dynamics = \new Dynamics {
