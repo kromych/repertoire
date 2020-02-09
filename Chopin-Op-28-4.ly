@@ -127,5 +127,5 @@ piano = \new PianoStaff \with {
   paper-width = 8.5\in
   paper-height = 11\in
   indent = #0
-  %system-count = #5
+  system-count = #8
 }
